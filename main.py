@@ -21,6 +21,8 @@ def csv_to_df(df):
     '''
     df = pd.read_csv(df, sep=';', decimal=',')
     df.info()
+    if not df:
+        raise ValueError('Arquivo não encontrado.')
     return df
 
 # DADOS
