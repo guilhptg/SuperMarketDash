@@ -32,5 +32,3 @@ pip install -r requirements.txt
 ``` bash
 python streamlit run main.py
 ```
-
-### 👇 Contribuição

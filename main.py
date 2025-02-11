@@ -3,15 +3,21 @@ import plotly.express as px
 import streamlit as st
 
 
-
 # Faturamento por unidade
 # Tipo de produto mais vendodo, contribuição por filial
 # Desempenho das formas de pagamento
 # Como estão as avaliações das filiais
 
 
+
 # Configuração para os elementos da página ocuparem a largura total
 st.set_page_config(layout='wide')
+
+
+# Title
+st.title('Super Market - Dashboard')
+st.caption('Created by: Guilherme Portugal')
+st.subheader('Sellers and Products per Month')
 
 
 def csv_to_df(df):
@@ -83,4 +89,4 @@ city_total = df_filtred.groupby('City')[['Total']].sum().reset_index()
 fig_rating = px.bar(df_filtred, x='City', y='Rating', title='Avaliação')
 col5.plotly_chart(fig_rating, use_container_width=True)
 
-
+st.markdown('#### Follow me on [GitHub ](https://github.com/guilhptg/)')
