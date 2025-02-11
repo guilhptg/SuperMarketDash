@@ -13,6 +13,7 @@ import streamlit as st
 # Configuração para os elementos da página ocuparem a largura total
 st.set_page_config(layout='wide')
 
+
 def csv_to_df(df):
     '''
     Transform .csv files to Pandas DataFrame
@@ -25,10 +26,10 @@ def csv_to_df(df):
     
     return df
 
-# DADOS
 
+# DADOS
 df = csv_to_df('supermarket_sales.csv')
-df
+
 
 # Tratamento dos dados
 df['Date'] = pd.to_datetime(df['Date'])
@@ -81,3 +82,5 @@ col4.plotly_chart(fig_king, use_container_width=True)
 city_total = df_filtred.groupby('City')[['Total']].sum().reset_index()
 fig_rating = px.bar(df_filtred, x='City', y='Rating', title='Avaliação')
 col5.plotly_chart(fig_rating, use_container_width=True)
+
+

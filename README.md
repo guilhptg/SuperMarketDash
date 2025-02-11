@@ -22,7 +22,7 @@ SuperMarketDash /\
 ┣ 📜 .gitignore → 
 
 ```bash
-git clone https://github.com/guilhptg/SuperMarketDash/
+git https://github.com/guilhptg/SuperMarketDash.git
 cd SuperMarketDash
 pip install -r requirements.txt
 ```
