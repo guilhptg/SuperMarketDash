@@ -10,19 +10,19 @@ import streamlit as st
 # Como estão as avaliações das filiais
 
 
-
+# Configuração para os elementos da página ocuparem a largura total
 st.set_page_config(layout='wide')
 
 def csv_to_df(df):
     '''
     Transform .csv files to Pandas DataFrame
 
-    :param csv file 
+    :param df: str - CSV file to transforme a Data Frame with Pandas
+    :return: 
     '''
+
     df = pd.read_csv(df, sep=';', decimal=',')
-    df.info()
-    if not df:
-        raise ValueError('Arquivo não encontrado.')
+    
     return df
 
 # DADOS
@@ -33,11 +33,14 @@ df
 # Tratamento dos dados
 df['Date'] = pd.to_datetime(df['Date'])
 
+# Order ascendente
 df = df.sort_values('Date')
 
+# Filtro avançado para identificar o mês pelo ano respectivo
 df['Month'] = df['Date'].apply(lambda x: str(x.year) + '-' + str(x.month))
-# display(df)
 
+
+# Select Bar para filtrar os dados por mês
 month = st.sidebar.selectbox('Mês', df['Month'].unique())
 
 df_filtred = df[df['Month'] == month]
