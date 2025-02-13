@@ -2,7 +2,7 @@
  
 [![Licença](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
---
+
 ## Acesse
 [Dashboard](https://supermarketdash.streamlit.app/)
 
