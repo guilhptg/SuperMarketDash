@@ -2,6 +2,11 @@
  
 [![Licença](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
+--
+## Acesse
+[Dashboard](https://supermarketdash.streamlit.app/)
+
+
 ## 📌 Descrição
 Dashboard interativo feito totalmente com Python, desde o tratamento dos dados até protagem dos gráficos
 
