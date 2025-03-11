@@ -71,22 +71,23 @@ fig_prod = px.bar(df_filtred, x='Date', y='Product line', color='City', title='F
 col2.plotly_chart(fig_prod, use_container_width=True)
 
 
-# Contruibuição por filial
+# Faturamento por filial
 city_total = df_filtred.groupby('City')[['Total']].sum().reset_index()
 fig_city = px.bar(city_total, x='City', y='Total', title='Faturamento por filial')
 col3.plotly_chart(fig_city, use_container_width=True)
 
 
 
-# Contruibuição por filial
+# Faturamento por tipo de pagamento
 city_total = df_filtred.groupby('City')[['Total']].sum().reset_index()
 fig_king = px.pie(df_filtred, values='Total', names='Payment', title='Faturamento por tipo de pagamento')
 col4.plotly_chart(fig_king, use_container_width=True)
 
 
-# Contruibuição por filial
+# Avaliação por filial
 city_total = df_filtred.groupby('City')[['Total']].sum().reset_index()
 fig_rating = px.bar(df_filtred, x='City', y='Rating', title='Avaliação')
 col5.plotly_chart(fig_rating, use_container_width=True)
 
 st.markdown('#### Follow me on [GitHub ](https://github.com/guilhptg/)')
+
