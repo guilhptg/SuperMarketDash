@@ -1,13 +1,13 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+from dash import Dash, html, dcc
 
 
 # Faturamento por unidade
 # Tipo de produto mais vendodo, contribuição por filial
 # Desempenho das formas de pagamento
 # Como estão as avaliações das filiais
-
 
 
 # Configuração para os elementos da página ocuparem a largura total
