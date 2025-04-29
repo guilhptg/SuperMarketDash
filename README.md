@@ -4,11 +4,14 @@
 
 
 ## Acesse
+
 [Dashboard](https://supermarketdash.streamlit.app/)
 
 
 ## 📌 Descrição
-Dashboard interativo feito totalmente com Python, desde o tratamento dos dados até protagem dos gráficos
+
+Dashboard interativo de acordo com o primeiro trimestre do ano de 2019 de um supermercado. Feito totalmente com Python, desde o tratamento dos dados até plotagem dos gráficos.
+
 
 ## Tecnologias Usadas
 
