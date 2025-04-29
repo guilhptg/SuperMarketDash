@@ -29,6 +29,8 @@ SuperMarketDash /\
 ┣ 📂 LICENSE \
 ┣ 📜 .gitignore → 
 
+---
+
 ```bash
 git https://github.com/guilhptg/SuperMarketDash.git
 cd SuperMarketDash
