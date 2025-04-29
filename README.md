@@ -7,6 +7,7 @@
 
 [Dashboard](https://supermarketdash.streamlit.app/)
 
+---
 
 ## 📌 Descrição
 
