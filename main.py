@@ -88,5 +88,5 @@ city_total = df_filtred.groupby('City')[['Total']].sum().reset_index()
 fig_rating = px.bar(df_filtred, x='City', y='Rating', title='Rating by Branch')
 col5.plotly_chart(fig_rating, use_container_width=True)
 
-st.markdown('#### Follow me on [guilhptg - GitHub](https://github.com/guilhptg/)')
+st.markdown('#### Follow me on [GitHub - guilhptg](https://github.com/guilhptg/)')
 
