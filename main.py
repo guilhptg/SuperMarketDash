@@ -15,9 +15,9 @@ st.set_page_config(layout='wide')
 
 
 # Title
-st.title('Super Market - Dashboard')
+st.title('Supermarket - Sales')
 st.caption('Created by: Guilherme Portugal')
-st.subheader('Sellers and Products per Month')
+st.subheader('Seles in Q1 2019')
 
 
 def csv_to_df(df):
@@ -35,7 +35,6 @@ def csv_to_df(df):
 
 # DADOS
 df = csv_to_df('supermarket_sales.csv')
-
 
 # Tratamento dos dados
 df['Date'] = pd.to_datetime(df['Date'])
@@ -62,32 +61,32 @@ col3, col4, col5 = st.columns(3)
 
 
 # Faturamento por unidade
-fig_date = px.bar(df_filtred, x='Date', y='Total', color='City', title='Faturamento por dia')
+fig_date = px.bar(df_filtred, x='Date', y='Total', color='City', title='Revenue by Day')
 col1.plotly_chart(fig_date, use_container_width=True)
 
 
 # Faturamento por tipo de produto
-fig_prod = px.bar(df_filtred, x='Date', y='Product line', color='City', title='Faturamento por tipo de produto', orientation='h')
+fig_prod = px.bar(df_filtred, x='Date', y='Product line', color='City', title='Revenue by Product Type', orientation='h')
 col2.plotly_chart(fig_prod, use_container_width=True)
 
 
 # Faturamento por filial
 city_total = df_filtred.groupby('City')[['Total']].sum().reset_index()
-fig_city = px.bar(city_total, x='City', y='Total', title='Faturamento por filial')
+fig_city = px.bar(city_total, x='City', y='Total', title='Revenue by Branch')
 col3.plotly_chart(fig_city, use_container_width=True)
 
 
 
 # Faturamento por tipo de pagamento
 city_total = df_filtred.groupby('City')[['Total']].sum().reset_index()
-fig_king = px.pie(df_filtred, values='Total', names='Payment', title='Faturamento por tipo de pagamento')
+fig_king = px.pie(df_filtred, values='Total', names='Payment', title='Revenue by Payment Type')
 col4.plotly_chart(fig_king, use_container_width=True)
 
 
 # Avaliação por filial
 city_total = df_filtred.groupby('City')[['Total']].sum().reset_index()
-fig_rating = px.bar(df_filtred, x='City', y='Rating', title='Avaliação')
+fig_rating = px.bar(df_filtred, x='City', y='Rating', title='Rating by Branch')
 col5.plotly_chart(fig_rating, use_container_width=True)
 
-st.markdown('#### Follow me on [GitHub ](https://github.com/guilhptg/)')
+st.markdown('#### Follow me on [guilhptg - GitHub](https://github.com/guilhptg/)')
 
