@@ -17,7 +17,7 @@ st.set_page_config(layout='wide')
 # Title
 st.title('Supermarket - Sales')
 st.caption('Created by: Guilherme Portugal')
-st.subheader('Seles in Q1 2019')
+st.subheader('Sales in the First Quarter of 2019')
 
 
 def csv_to_df(df):
