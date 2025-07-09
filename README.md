@@ -5,7 +5,7 @@
 
 ## Acesse
 
-[Dashboard](https://supermarketdash.streamlit.app/) online e disponivel no link a seguir. ( Site em provável hibernação, em segundos ele reativa e ja pode acessar. ) 
+[Dashboard](https://supermarketdash.streamlit.app/) online e disponivel no link a seguir. ( Site em provável hibernação, em segundos ele reativa e ja pode acessar ) 
 
 
 ---
@@ -16,7 +16,7 @@ Dashboard de Vendas, refente ao primeiro trimestre do ano de 2019 de um supermer
 
 ## Objetivo
 
-Analisar o resultado levando em consideração segmentação de produtos, vendedores, filiais e avaliações dos clientes
+Analisar o resultado levando em consideração segmentação de produtos, vendedores, filiais e avaliações dos clientes.
 
 
 ## Tecnologias Usadas
