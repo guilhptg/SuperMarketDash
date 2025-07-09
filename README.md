@@ -5,7 +5,7 @@
 
 ## Acesse
 
-Dashboard online e disponivel no link a seguir. ( Site em provável hibernação, em segundos ele reativa e ja pode acessar. )
+Dashboard online e disponivel no link a seguir. ( Site em provável hibernação, em segundos ele reativa e ja pode acessar. ) \
 [Dashboard](https://supermarketdash.streamlit.app/)
 
 ---
