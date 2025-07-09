@@ -1,4 +1,4 @@
-# SuperMarketDash
+# SuperMarket - Sales Dashboard
  
 [![Licença](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -11,7 +11,11 @@
 
 ## 📌 Descrição
 
-Dashboard interativo de acordo com o primeiro trimestre do ano de 2019 de um supermercado. Feito totalmente com Python, desde o tratamento dos dados até plotagem dos gráficos.
+Dashboard de Vendas, refente ao primeiro trimestre do ano de 2019 de um supermercado. Feito totalmente com Python, desde o tratamento dos dados até plotagem dos gráficos.
+
+## Objetivo
+
+Analisar o resultado levando em consideração segmentação de produtos, vendedores, filiais e avaliações dos clientes
 
 
 ## Tecnologias Usadas
