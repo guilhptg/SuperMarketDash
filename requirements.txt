@@ -16,7 +16,7 @@ decorator==5.1.1
 executing==2.2.0
 Flask==3.0.3
 gitdb==4.0.12
-GitPython==3.1.44
+GitPython==3.1.47
 idna==3.10
 importlib_metadata==8.6.1
 ipykernel==6.29.5
